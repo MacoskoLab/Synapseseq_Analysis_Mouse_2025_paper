@@ -15,10 +15,10 @@ All required data is publicly available in a Google Cloud Storage bucket.
 
 ### Programmatic Access
 
-Data can be accessed using the Google cloud SDK [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk) at:
+Data can be accessed using the Google Cloud SDK [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk) at:
 gs://macosko_public/Synapseseq_data_2025
 
-For executing vignettes, required files will be downloaded at begining of the notebook.
+For executing vignettes, required files will be downloaded at beginning of the notebook.
 
 ### Manual Access
 
@@ -31,7 +31,8 @@ The requirements.yaml file can be used to create a conda environment for which w
 
 Ensure a conda solver is installed. We recommend mamba. (https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)
 
-Once set with a conda solver, use to create an environment.
+
+The `requirements.yaml` file can be used to create a conda environment for running the notebooks.
 
 ```
  mamba env create -f requirements.yaml -n synapseseq_env

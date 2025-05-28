@@ -18,6 +18,8 @@ All required data is publicly available in a Google Cloud Storage bucket.
 Data can be accessed using the Google cloud SDK [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk) at:
 gs://macosko_public/Synapseseq_data_2025
 
+For executing vignettes, required files will be downloaded at begining of the notebook.
+
 ### Manual Access
 
 You can also browse and download the data manually from the following link:  

@@ -25,4 +25,25 @@ For executing vignettes, required files will be downloaded at begining of the no
 You can also browse and download the data manually from the following link:  
 [Google Cloud Console – Synapseseq Data (2025)](https://console.cloud.google.com/storage/browser/macosko_public/Synapseseq_data_2025)
 
+### Create environment
 
+The requirements.yaml file can be used to create a conda environment for which we can use to execute the notebooks.
+
+Ensure a conda solver is installed. We recommend mamba. (https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)
+
+Once set with a conda solver, use to create an environment.
+
+```
+ mamba env create -f requirements.yaml -n synapseseq_env
+ mamba activate synapseseq_env
+```
+
+Next we need to export the environment so it is accessible via jupyter.
+```
+python -m ipykernel install --user --name synapseseq_env --display-name "synapseseq_env"
+```
+
+Then run jupyter-lab
+```
+jupyter-lab --ip='*' --port=8989
+```

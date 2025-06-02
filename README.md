@@ -25,6 +25,58 @@ For executing vignettes, required files will be downloaded at beginning of the n
 You can also browse and download the data manually from the following link:  
 [Google Cloud Console – Synapseseq Data (2025)](https://console.cloud.google.com/storage/browser/macosko_public/Synapseseq_data_2025)
 
+File Info:
+
+## VISp – Presynaptic Primary Visual Cortex Injection Experiment
+
+- **v1_adata.h5ad**  
+  H5AD (Anndata) of snRNA-seq obtained from the VISp experiment.
+- **v1_processed_vt_df.csv**  
+  DataFrame containing relationships of cell-barcode to viral tags (VT).
+- **v1_projs.pkl**  
+  Pickle file encoding a Python dictionary for VTs obtained at various projection targets.
+- **thalamus_combined_obj.pkl**  
+  Pickle file encoding RNA expression obtained via Slide-seq at the thalamus.
+- **thalamus_bead_location.csv**  
+  DataFrame containing the relationship between bead barcode and spatial position.
+- **thalamus_vt_df_bead_merged.csv**  
+  DataFrame containing mappings of VTs found in the thalamus and the bead on which each molecule was identified.
+
+---
+
+## AC – Presynaptic Anterior Cortex Injection Experiment
+
+- **aca_adata.h5ad**  
+  H5AD (Anndata) of snRNA-seq obtained from the AC experiment.
+- **aca_processed_vt_df.csv**  
+  DataFrame containing relationships of cell-barcode to VTs.
+- **aca_projs.pkl**  
+  Pickle file encoding a Python dictionary of VTs obtained at various projection targets.
+- **str_combined_obj.pkl**  
+  Pickle file encoding RNA expression obtained via Slide-seq in the striatum.
+- **str_bead_locations.csv**  
+  DataFrame containing the relationship between bead barcode and spatial position.
+- **str_vt_df_bead_merged.csv**  
+  DataFrame containing mappings of VTs found in the striatum and the bead on which each molecule was identified.
+
+---
+
+## Postsynaptic_Hippocampus – Postsynaptic Hippocampus Experiment
+
+- **pyr_post_processed.csv**  
+  DataFrame containing the DBSCAN cluster calls of VTs within the pyramidal layer (CA1, CA2, CA3), along with their spatial position (obtained from Slide-seq).
+- **vt_df_dgl.csv**  
+  DataFrame containing the DBSCAN cluster calls of VTs within the infrapyramidal horn of the DG.
+- **vt_df_dgu.csv**  
+  DataFrame containing the DBSCAN cluster calls of VTs within the suprapyramidal horn of the DG.
+- **processed_hippo_RNA.qs**  
+  Seurat object with spatial transcriptomics measurements made by Slide-seq.
+- **rctd_results.csv**  
+  DataFrame containing mappings of bead-barcode to cell-type proportions (RCTD results).
+
+
+
+
 ### Create environment
 
 The requirements.yaml file can be used to create a conda environment for which we can use to execute the notebooks.
